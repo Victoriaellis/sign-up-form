@@ -1,0 +1,123 @@
+.main {
+  min-height: 100vh;
+}
+
+.navbar {
+  align-items: center;
+  background: #fa5d54;
+  display: flex;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-link {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.banner {
+  padding-top: 8%;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Arial';
+  color: #fa5d54;
+}
+
+.banner-subheading {
+  color: #fa5d54;
+}
+
+.form {
+  flex: 1 1 auto;
+  margin: auto;
+  width: 40em;
+  padding: 3em;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+label {
+   font-family: 'arial';
+   display: block;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+.form-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding-top: 5px;
+}
+
+.form-checkbox > label:hover {
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: #fa5d54;
+  color: white;
+}
+
+#submit {
+  font-family: 'arial';
+  background-color: #fa5d54;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.form-confirmation {
+  font-family: 'arial';
+  text-align: center;
+}
+
+.footer {
+  background: #fa5d54;
+  color: white;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 30px;
+  padding: 0px 10px;
+}
+
+li > a {
+  color: white;
+  transition: color;
+}
+
+a:hover {
+  color: #8b3b4c;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0em;
+}

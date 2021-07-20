@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DirectlyApply sign up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  </head>
+  <body>
+    <div class="navbar">
+       <div class="navbar-links">
+          <a href="#" target="_blank" class="navbar-link">Jobs</a>
+          <a href="#" target="_blank" class="navbar-link">Companies</a>
+          <a href="#" target="_blank" class="navbar-link">Community</a>
+        </div>
+    </div>
+    <div class="main">
+      <div class="banner">
+        <h1>Sign up for DirectlyApply</h1>
+        <p class="banner-subheading">
+          Please complete the form below to apply for roles with DirectlyApply
+        </p>
+      </div>
+
+      <div>
+        <form class="form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="name">Name</label>
+                <input type="email" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="phone-number">Phone number</label>
+                <input type="email" class="form-control" id="phone-number" placeholder="Enter your contact number" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+            </div>
+
+            <div class="form-group">
+              <label>How did you hear about us?</label>
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-checkbox">
+                    <input class="input" type="checkbox" id="linked-in" name="where" value="linked-in">
+                    <label for="linked-in">Linked in</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-checkbox">
+                    <input class="input" type="checkbox" id="twitter" name="where" value="twitter">
+                    <label for="twitter">Twitter</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-checkbox">
+                    <input class="input" type="checkbox" id="twitter1" name="where" value="twitter1">
+                    <label for="twitter1">Twitter</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-checkbox">
+                    <input class="input" type="checkbox" id="twitter2" name="where" value="twitter2">
+                    <label for="twitter2">Twitter</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cv">Upload your CV</label>
+              <input type="file" id="cv" name="filename" />
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+          </form>
+      </div>
+    </div>
+
+      <div class="footer">
+        <div>
+          <p>Follow us:</p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+              <i class="fab fa-twitter-square icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <i class="fab fa-github icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script src="./script.js"></script>
+    </body>
+</html>
