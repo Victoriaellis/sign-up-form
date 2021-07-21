@@ -87,9 +87,14 @@ input[type=checkbox] {
   margin-top: 0.5em;
 }
 
+#submit:hover {
+  cursor: pointer;
+}
+
 .form-confirmation {
   font-family: 'arial';
   text-align: center;
+  color: #fa5d54;
 }
 
 .footer {

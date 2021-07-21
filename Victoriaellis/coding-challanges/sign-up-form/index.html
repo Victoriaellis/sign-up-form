@@ -9,9 +9,9 @@
   <body>
     <div class="navbar">
        <div class="navbar-links">
-          <a href="#" target="_blank" class="navbar-link">Jobs</a>
-          <a href="#" target="_blank" class="navbar-link">Companies</a>
-          <a href="#" target="_blank" class="navbar-link">Community</a>
+          <a href="#" class="navbar-link">Jobs</a>
+          <a href="#" class="navbar-link">Companies</a>
+          <a href="#" class="navbar-link">Community</a>
         </div>
     </div>
     <div class="main">
@@ -23,27 +23,32 @@
       </div>
 
       <div>
-        <form class="form" action="#" method="POST">
+        <form class="form" method="POST" target="_blank" onsubmit="logResults()">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="name">Name</label>
-                <input type="email" class="form-control" id="name" placeholder="Enter your name" required>
+                <input type="text" class="form-control result" id="name" placeholder="Enter your name" required>
               </div>
 
               <div class="form-group col-md-6">
                 <label for="phone-number">Phone number</label>
-                <input type="email" class="form-control" id="phone-number" placeholder="Enter your contact number" required>
+                <input type="text" class="form-control result" id="phone-number" placeholder="Enter your contact number" required>
               </div>
             </div>
 
             <div class="form-group">
               <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+              <input type="email" class="form-control result" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
             </div>
 
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+              <input type="password" class="form-control result" id="password" placeholder="Enter password" required>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" class="form-control result" id="confirm-password" placeholder="Retype password" required>
             </div>
 
             <div class="form-group">
@@ -51,13 +56,13 @@
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-checkbox">
-                    <input class="input" type="checkbox" id="linked-in" name="where" value="linked-in">
+                    <input class="input result" type="checkbox" id="linked-in" name="where" onclick="check(this)">
                     <label for="linked-in">Linked in</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-checkbox">
-                    <input class="input" type="checkbox" id="twitter" name="where" value="twitter">
+                    <input class="input result" type="checkbox" id="twitter" name="where" onclick="check(this)">
                     <label for="twitter">Twitter</label>
                   </div>
                 </div>
@@ -65,14 +70,14 @@
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-checkbox">
-                    <input class="input" type="checkbox" id="twitter1" name="where" value="twitter1">
-                    <label for="twitter1">Twitter</label>
+                    <input class="input result" type="checkbox" id="facebook" name="where" onclick="check(this)">
+                    <label for="facebook">Facebook</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-checkbox">
-                    <input class="input" type="checkbox" id="twitter2" name="where" value="twitter2">
-                    <label for="twitter2">Twitter</label>
+                    <input class="input result" type="checkbox" id="google" name="where" onclick="check(this)">
+                    <label for="google">Google search</label>
                   </div>
                 </div>
               </div>
@@ -80,7 +85,7 @@
 
             <div class="form-group">
               <label for="cv">Upload your CV</label>
-              <input type="file" id="cv" name="filename" />
+              <input class="result" type="file" id="cv" name="filename" />
             </div>
 
             <button type="submit" id="submit">Submit</button>
