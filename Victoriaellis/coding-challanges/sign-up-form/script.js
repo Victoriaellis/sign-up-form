@@ -35,6 +35,8 @@ checkbox.forEach(function(option){
 
 //identify the checkbox that has been checked
 const check = (obj) => {
-  obj.checked ? obj.value="checked" : obj.value="unchecked"
+  if (obj.checked) {
+    obj.value=true
+  }
 }
 
